@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://World.gd" type="Script" id=1]
+
+[node name="World" type="Node"]
+script = ExtResource( 1 )
+perlin_grid_x = 16
+perlin_grid_y = 16
+
+[node name="Output" type="Sprite" parent="."]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+current = true
