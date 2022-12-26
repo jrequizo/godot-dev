@@ -9,10 +9,17 @@ onready var canvas_size
 export var perlin_grid_x = 1
 export var perlin_grid_y = 1
 
+
+# Fractal Brownian Motion Controls
+export var octaves = 8
+export var lacunarity = 3
+export var gain = 0.5
+export var amplitude = 0.5
+
 var offset_x = 0
 var offset_y = 0
 
-var generator_seed = null
+onready var generator_seed
 
 export var max_threads = 4
 var current_threads = 0
@@ -86,8 +93,19 @@ func _generate_perlin_noise_texture():
 
 func _create_thread_worker(params):
 	var index = params["i"]
-	var noise = _get_noise(params["x"], params["y"], params["canvas_size"])
-	var noise_shifted = round(((noise * 0.5) + 0.5) * 255)
+	
+	var value = 0.0
+	
+	var st = Vector2(params["x"], params["y"])
+	
+	var c_amplitude = amplitude
+	
+	for i in octaves:
+		value += c_amplitude * _get_noise(st.x, st.y, params["canvas_size"])
+		st *= lacunarity
+		c_amplitude *= gain
+	
+	var noise_shifted = round(((value * 0.5) + 0.5) * 255)
 	
 	var color = Color8(noise_shifted, noise_shifted, noise_shifted)
 	
@@ -178,6 +196,7 @@ func _lerp(w, a0, a1):
 
 func _exit_tree():
 	_wait_for_threads()
+	
 
 func _wait_for_threads():
 	for x in current_threads:

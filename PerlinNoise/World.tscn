@@ -4,8 +4,8 @@
 
 [node name="World" type="Node"]
 script = ExtResource( 1 )
-perlin_grid_x = 16
-perlin_grid_y = 16
+perlin_grid_x = 4
+perlin_grid_y = 4
 
 [node name="Output" type="Sprite" parent="."]
 
