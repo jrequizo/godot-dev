@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Player/Abilities/Teleport.gd" type="Script" id=1]
+
+[node name="Teleport" type="Node"]
+script = ExtResource( 1 )
+
+[node name="DelayTimer" type="Timer" parent="."]
+wait_time = 0.5
+
+[connection signal="timeout" from="DelayTimer" to="." method="_on_DelayTimer_timeout"]
