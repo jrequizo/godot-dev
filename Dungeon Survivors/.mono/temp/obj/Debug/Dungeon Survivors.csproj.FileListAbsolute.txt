@@ -1,9 +1,0 @@
-D:\Users\Jay\Desktop\Dev\Godot\Projects\Dungeon Survivors\.mono\temp\bin\Debug\Dungeon Survivors.dll
-D:\Users\Jay\Desktop\Dev\Godot\Projects\Dungeon Survivors\.mono\temp\bin\Debug\Dungeon Survivors.pdb
-D:\Users\Jay\Desktop\Dev\Godot\Projects\Dungeon Survivors\.mono\temp\obj\Debug\Dungeon Survivors.csproj.AssemblyReference.cache
-D:\Users\Jay\Desktop\Dev\Godot\Projects\Dungeon Survivors\.mono\temp\obj\Debug\Dungeon Survivors.GeneratedMSBuildEditorConfig.editorconfig
-D:\Users\Jay\Desktop\Dev\Godot\Projects\Dungeon Survivors\.mono\temp\obj\Debug\Dungeon Survivors.AssemblyInfoInputs.cache
-D:\Users\Jay\Desktop\Dev\Godot\Projects\Dungeon Survivors\.mono\temp\obj\Debug\Dungeon Survivors.AssemblyInfo.cs
-D:\Users\Jay\Desktop\Dev\Godot\Projects\Dungeon Survivors\.mono\temp\obj\Debug\Dungeon Survivors.csproj.CoreCompileInputs.cache
-D:\Users\Jay\Desktop\Dev\Godot\Projects\Dungeon Survivors\.mono\temp\obj\Debug\Dungeon Survivors.dll
-D:\Users\Jay\Desktop\Dev\Godot\Projects\Dungeon Survivors\.mono\temp\obj\Debug\Dungeon Survivors.pdb
